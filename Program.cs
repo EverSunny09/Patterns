@@ -255,3 +255,131 @@ for (int i = 0; i < n; i++)
     Console.WriteLine();
 }*/
 #endregion
+
+#region Sum of numbers or a digit
+
+/*namespace Patterns;
+
+class Program
+{
+
+    static int SumOfNumbers(int n)
+    {
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++)
+        {
+            sum += i;
+        }
+
+        return sum;
+    }
+
+    public static void Main()
+    {
+        int n = 20;
+
+        int sum = SumOfNumbers(n);
+
+        Console.WriteLine($"The sum of numbers from 1 to {n} is: {sum}");
+    }
+}*/
+
+/*namespace Patterns;
+
+class Program
+{
+
+    static int SumOfDigits(int n)
+    {
+        int sum = 0;
+        while (n != 0)
+        {
+            int temp = n % 10;
+            sum += temp;
+            n /= 10;
+        }
+
+        return sum;
+    }
+
+    public static void Main()
+    {
+        int n = 567;
+
+        int sum = SumOfDigits(n);
+
+        Console.WriteLine($"The sum of digit {n} is: {sum}");
+    }
+}*/
+
+#endregion
+
+#region Calculate Factorial
+
+/*namespace Patterns;
+
+class Program
+{
+
+    static long Factorial(int n)
+    {
+        long factorial = 1;
+
+        for (int i = 1; i <= n; i++)
+        {
+            factorial *= i;
+        }
+
+        return factorial;
+    }
+
+    public static void Main()
+    {
+        int n = 10;
+
+        long factorial = Factorial(n);
+
+        Console.WriteLine($"The factorial of {n} is: {factorial}");
+    }
+}*/
+
+#endregion
+
+#region Binomial Coefficient
+
+/*namespace Patterns;
+
+class Program
+{
+
+    static long Factorial(long n)
+    {
+        long factorial = 1;
+
+        for (int i = 1; i <= n; i++)
+        {
+            factorial *= i;
+        }
+
+        return factorial;
+    }
+
+    static long CalculateNcr(int n, int r)
+    {
+        long nFactorial = Factorial(n);
+        long rFactorial = Factorial(r);
+        long nrFactorial = Factorial(n - r);
+        return nFactorial / (rFactorial * nrFactorial);
+    }
+
+    public static void Main()
+    {
+        int n = 6;
+        int r = 3;
+
+        Console.WriteLine($"The Binomial Coefficient of N:{n} R:{r} is: {CalculateNcr(n,r)}");
+    }
+}*/
+
+#endregion
