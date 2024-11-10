@@ -383,3 +383,65 @@ class Program
 }*/
 
 #endregion
+
+#region Decimal to Binary
+
+/*namespace Patterns;
+
+class Program
+{
+    static int DecimalToBinary(int num)
+    {
+        int power = 1;
+        int binaryNum = 0;
+        while (num != 0)
+        {
+            var remainder = num % 2;
+            binaryNum += remainder * power;
+            power *= 10;
+            num /= 2;
+        }
+
+        return binaryNum;
+    }
+
+    public static void Main()
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"The Binary number for {i} is: {DecimalToBinary(i)}");
+        }
+    }
+}*/
+
+
+
+#endregion
+
+#region Binary to Decimal
+
+/*namespace Patterns;
+
+class Program
+{
+    static int BinaryToDecimal(int binNum)
+    {
+        int ans = 0, pow = 1;
+        while (binNum > 0)
+        {
+            var rem = binNum % 10;
+            ans += rem * pow;
+            binNum /= 10;
+            pow *= 2;
+        }
+        return ans;
+    }
+
+    public static void Main()
+    {
+        int i = 10110;
+        Console.WriteLine($"The Decimal number for {i} is: {BinaryToDecimal(i)}");
+    }
+}
+*/
+#endregion
