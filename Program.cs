@@ -459,3 +459,140 @@ while (number > 0)
 Console.Write("Reverse is " +rev);*/
 
 #endregion
+
+#region Arrays
+
+/*int[] number = {12,32,542,23,23432,2342,1123,233243,34,-12,-23};
+int largest= Int32.MinValue, smallest = Int32.MaxValue;
+for (int i = 0; i < number.Length; i++)
+{
+    largest = Math.Max(number[i], largest);
+    smallest = Math.Min(number[i], smallest); 
+}
+Console.WriteLine($"Largest number is: {largest} and the Smallest is {smallest}");*/
+
+/*int[] number = { 12, 32, 542, 23, 23432, 2342, 1123, 233243, 34, -12, -23 };
+int largest = Int32.MinValue, lIdx = Int32.MinValue, smallest = Int32.MaxValue, sIdx = Int32.MaxValue;
+for (int i = 0; i < number.Length; i++)
+{
+    if (number[i] > largest)
+    {
+        largest = number[i];
+        lIdx = i;
+    }
+
+    if (number[i] < smallest)
+    {
+        smallest = number[i];
+        sIdx = i;
+    }
+}
+Console.WriteLine($"Largest number is: {largest} and the index is {lIdx} and the Smallest is: {smallest} and the index is {sIdx}");*/
+#endregion
+
+#region Linear Search Array
+
+/*int[] numbers = { 1, 4, 2, 12, 32, 54, 2, 4, 9 };
+int find = 12;
+int index = -1;
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (find == numbers[i])
+    {
+        index = i;
+        break;
+    }
+}
+Console.Write($"Index is: {index}");*/
+
+#endregion
+
+#region Reverse an Array
+
+/*int[] num = { 12, 212, 12, 34, 56, 346, 123, 12, 3,1 };
+int start = 0;
+int end = num.Length - 1;
+
+while (start < end)
+{
+    int temp = num[start];
+    num[start] = num[end];
+    num[end] = temp;
+
+    start++;
+    end--;
+}
+
+for (int i = 0; i < num.Length; i++)
+{
+    Console.WriteLine(num[i]);
+}*/
+
+#endregion
+
+#region Find Sum and Product of an array
+
+/*int[] arr = { 1, 2, 3, 4, 5 };
+int sum = 0;
+int product = 1;
+for (int i = 0; i < arr.Length; i++)
+{
+    sum += arr[i];
+    product *= arr[i];
+}
+
+Console.WriteLine($"Sum of give array is {sum}");
+Console.WriteLine($"Product of give array is {product}");*/
+
+#endregion
+
+#region Swap min and max number of array
+
+/*int[] arr = { 1, 2, 3, 4, 5, 12, 7, 8, 9 };
+int minIdx = Int32.MaxValue;
+int minNumber = Int32.MaxValue;
+int maxIdx = Int32.MinValue;
+int maxNumber = Int32.MinValue;
+for (int i = 0; i < arr.Length; i++)
+{
+    if (arr[i] > maxNumber)
+    {
+        maxNumber = arr[i];
+        maxIdx = i;
+    }
+    if (arr[i] < minNumber)
+    {
+        minNumber = arr[i];
+        minIdx = i;
+    }
+}
+
+int temp = arr[maxIdx];
+arr[maxIdx] = arr[minIdx];
+arr[minIdx] = temp;
+
+Console.Write($"After swap array: ");
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write(arr[i]+ " ");
+}*/
+
+#endregion
+
+#region Find all unique values in an array
+
+/*int[] arr = { 1, 2, 3, 4, 1, 2, 3 };
+
+for (int i = 0; i < arr.Length; i++)
+{
+    bool exists = false;
+    for (int j = 0; j < arr.Length; j++)
+    {
+        if (i != j && arr[i] == arr[j])
+            exists = true;
+    }
+    if (!exists)
+        Console.WriteLine(arr[i]);
+}*/
+
+#endregion
