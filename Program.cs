@@ -445,3 +445,17 @@ class Program
 }
 */
 #endregion
+
+#region Reverse an Integer
+
+/*int number = 1242123;
+int rev = 0;
+while (number > 0)
+{
+    int latestDigit = number % 10;
+    rev = rev * 10 + latestDigit;
+    number /= 10;
+}
+Console.Write("Reverse is " +rev);*/
+
+#endregion
